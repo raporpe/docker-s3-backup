@@ -5,6 +5,6 @@ if [[ -z "${CRON_SCHEDULE}" ]]; then
   exit 1
 fi
 
-echo 0 17,2 * * * python3 /usr/src/backup.py >> /etc/crontabs/root
+echo "${CRON_SCHEDULE} python3 /usr/src/backup.py" >> /etc/crontabs/root
 
 while true; do sleep 10000; done
