@@ -1,8 +1,6 @@
-# Backup folder to S3 compatible bucket
+# Backup folders to S3 compatible bucket
 
-## What is it?
-
-This is a little container image for backing up a folder to a object storage 
+This is a little container image for backing up a folder to a object storage service such as AWS S3.
 
 **Required environment variables:**
 
